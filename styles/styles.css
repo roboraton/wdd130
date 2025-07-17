@@ -55,13 +55,14 @@ aside {
 aside h2 {
     color: rgb(0, 0, 0);
     font-size: 1.5em;
-    position: relative;
+    position: absolute;
 }   
 
 aside img {
-    width: 20em;
+    width: 15em;
     text-align: center;
     position: relative;
+    left: 1em;
 }
 
 footer {
