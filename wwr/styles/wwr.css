@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #33658A; /* Lapis Lazuli */
+    --secondary-color: #E4572E; /* Flame */
+    --accent1-color: #2DE1C2; /* Turquoise */
+    --accent2-color: #4F5D2F; /* Dark Moss Green */
+    --black: #050505; /* Black */
+    --heading-font: "Edu TAS Beginner", cursive;
+    --text-font: "Oregano", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* https://coolors.co/33658a-e4572e-2de1c2-4f5d2f-050505 */
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+
+.hero {
+    position: relative;
+    min-height: 400px;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: var(--black);
+}
+
+article {
+    background-color: var(--accent2-color);
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.hero article img {
+    float : none;
+    display: block;
+    width: 100px;
+    margin: 8px 0;
+    border-radius: 12px;
+  
+}
+
+div {
+    margin: 16px 0;
+    position: relative;
+}
+
+section img {
+    width: 500px;
+    margin: 8px;
+    border-radius: 12px;
+}
