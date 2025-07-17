@@ -44,13 +44,19 @@ p {
 
 aside {
     width: 25em;
-    margin: 30px;
+    margin: 30em;
     border: 1px solid rgba(31, 17, 31, 0.5);
     padding: 10px;
     background-color: lightgray;
     color: rgb(77, 77, 123);
     text-align: center;
 }
+
+aside h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    position: relative;
+}   
 
 aside img {
     width: 20em;
