@@ -75,36 +75,53 @@ nav, p, section, article {
 }
 
 .hero img {
+    display: block;
     position: absolute;
     width: 100%;
     height: auto;
 }
 
-h1 {
-    position: absolute;
+.hero h1 {                               /* Hero title */
+    position: relative;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
+    opacity: 0.6;
+    background-color: var(--secondary-color);
     color: var(--black);
 }
 
-article {
-    background-color: var(--accent2-color);
+.hero article {
+    position: relative;
+    top: 80px;
+    text-align: right;
+    background-color: var(--accent1-color);
     padding: 16px;
     border-radius: 8px;
+    opacity: 0.7;
 
 }
 
 .hero article img {
-    float : none;
-    display: block;
-    width: 100px;
-    margin: 8px 0;
+    float : right;
+    position: relative;
+    width: 120px;
+    margin: 4px 0;
     border-radius: 12px;
   
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: var(--black);
+    margin: 8px 0;
+    text-align: left;
+    font-family: var(--text-font);
+    position: relative;
+    padding: 8px;
+    
 }
 
 div {
