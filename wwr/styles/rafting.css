@@ -5,7 +5,9 @@
     --accent2-color: #4F5D2F; /* Dark Moss Green */
     --black: #050505; /* Black */
     --heading-font: "Edu TAS Beginner", cursive; /* https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap */
+    --heading-font-weight: 400 700;
     --text-font: "Oregano", cursive; /* https://fonts.googleapis.com/css2?family=Oregano&display=swap */
+    --text-font-weight: 400;
 }
 
 *{
