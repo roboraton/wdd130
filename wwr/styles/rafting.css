@@ -199,7 +199,7 @@ body {
   margin-top: 20px;
 }
 
-.gallery div {
+.gallery figure {
   width: 150px;
   text-align: center;
 }
@@ -212,7 +212,7 @@ body {
   border: 2px solid var(--primary-color);
 }
 
-.gallery p {
+.gallery figcaption {
   margin-top: 4px;
   font-size: 0.85rem;
   color: var(--accent2-color);
