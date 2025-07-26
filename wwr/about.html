@@ -9,12 +9,9 @@
     <meta name="author" content="Hector Gomez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Oregano&display=swap" rel="stylesheet">
 </head>
 <body>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
     <header>
         <div class="logo">
         <img src="images/logo.png" alt="Logo Rafting Company">
@@ -32,32 +29,36 @@
         <div class="hero">
             <img src="images/hero.jpg" alt="Hero Image">
             <h1>Rafting Company Name</h1>
+            <h1 class="hero-background">Rafting Company Name</h1>
             <article>
                 <img src="images/article.jpg" alt="Happy rafters">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis est deserunt dolore, corporis 
                     explicabo porro beatae ea voluptate animi ut?</p>
             </article>
         </div>
-        <section>
+
+        <section class="history-section">
             <h2>History</h2>
             <div class ="history">
-                <div class="text">
+                <div class="history-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
                 </div>
-            <div class="image">
-                <img src="images/history.jpg" alt="Rafting History image">
-            </div>
-            <div class="text">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                    <img src="images/history.jpg" alt="Rafting History image">
+                <div class="history-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                </div>
             </div>
         </section>
-        <section>
+
+        <section class="adventure">
                 <h2>Adventure Awaits You!</h2>
-                <img src="images/rafting1.jpg" alt="Rafting Adventure">
-                <img src="images/rafting2.jpg" alt="Kayaking Adventure">
-                <img src="images/rafting3.jpg" alt="Canoeing Adventure">
-                <img src="images/rafting4.jpg" alt="Group Rafting">
-                <img src="images/rafting5.jpg" alt="Exciting Rapids">
+                <div class="gallery">
+                    <div><img src="images/rafting1.jpg" alt="Rafting Adventure"><p>Safety First!</p></div>
+                    <div><img src="images/rafting2.jpg" alt="Kayaking Adventure"><p>Row as a Team</p></div>
+                    <div><img src="images/rafting3.jpg" alt="Canoeing Adventure"><p>First Quality Rafts</p></div>
+                    <div><img src="images/rafting4.jpg" alt="Group Rafting"><p>Live the Adventure!</p></div>
+                    <div><img src="images/rafting5.jpg" alt="Exciting Rapids"><p>The River Awaits</p></div>
+                </div>
             </section>
         
 
@@ -65,7 +66,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Rafting Company. Hector Gomez.</p>
+        <p class="copyright">&copy; 2025 Rafting Company. Hector Gomez.</p>
         <nav class="socialmedia">
             <a href="https://www.facebook.com/">Facebook</a>
                 <img src="images/facebook-logo.jpg" alt="Facebook rafters community">
@@ -74,7 +75,7 @@
             <a href="https://www.instagram.com/">Instagram</a>
                 <img src="images/instagram-logo.jpg" alt="Instagram rafters community">
         </nav>
-        <p>Contact us at <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
+        <p class="contact">Contact us at <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
     </footer>
     
 </body>

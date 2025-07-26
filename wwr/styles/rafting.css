@@ -1,22 +1,20 @@
 :root {
     --primary-color: #33658A; /* Lapis Lazuli */
-    --secondary-color: #E4572E; /* Flame */
     --accent1-color: #2DE1C2; /* Turquoise */
+    --secondary-color: #E4572E; /* Flame */
     --accent2-color: #4F5D2F; /* Dark Moss Green */
-    --black: #050505; /* Black */
     --heading-font: "Edu TAS Beginner", cursive; /* https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap */
     --heading-font-weight: 400 700;
     --text-font: "Oregano", cursive; /* https://fonts.googleapis.com/css2?family=Oregano&display=swap */
     --text-font-weight: 400;
 }
+/* https://coolors.co/33658a-e4572e-2de1c2-4f5d2f-050505 */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* https://coolors.co/33658a-e4572e-2de1c2-4f5d2f-050505 */
 
 header, main, footer {
     width: 840px;
@@ -28,14 +26,25 @@ h1, h2 {
     color: var(--secondary-color);
 }
 
+nav, p, section, article {
+    margin: 16px;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: var(--text-font);
+    color: var(--accent2-color);
+}
+
+                                          /* Header section */
+
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
     padding: 20px;
-    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-top: 15px;
+    width: auto;
 }
 
 .logo {
@@ -43,11 +52,13 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
+    justify-self: center;
 }
 
 header nav {
     display: flex;
     gap: 16px;
+    margin-right: 100px;
 }
 
 header nav a {
@@ -55,7 +66,7 @@ header nav a {
     background-color: var(--accent1-color);
     border-radius: 5px;
     text-decoration: none;
-    color: var(--black);
+    color: var(--accent2-color);
     font-weight: bold;
     display: inline-block;
     align-items: center;
@@ -64,16 +75,12 @@ header nav a {
 
 body {
     font-family: var(--text-font);
-    color: var(--black);
+    color: var(--accent2-color);
     line-height: 1.6;
+    background-color: white;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
+                                            /* Hero section */
 
 .hero {
     position: relative;
@@ -81,73 +88,154 @@ nav, p, section, article {
 }
 
 .hero img {
-    display: block;
     position: absolute;
+    top: 20px;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.9;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.hero h1 {                               /* Hero title */
-    position: relative;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+.hero h1 {                               
+    position: absolute;
+    top: 5px;
+    left: 30%;
+    z-index: 1;
+    width: fit-content;
+    padding: 16px 24px;
+    margin-top: 20px;
     text-align: center;
+    color: white;
     opacity: 0.6;
-    background-color: var(--secondary-color);
-    color: var(--black);
+    border-radius: 8px;
 }
+
+.hero-background {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    z-index: 1;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 
 .hero article {
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 120px;
     text-align: right;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     padding: 16px;
     border-radius: 8px;
-    opacity: 0.7;
-    
+    opacity: 0.8;
+}
+
+.hero article p {
+    color: white;
+    font-family: var(--text-font);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .hero article img {
     float : right;
     position: relative;
     width: 120px;
-    margin: 4px 0;
+    margin: 15px 15px;
     border-radius: 12px;
     
 }
 
- /* History section */
+                                                /* History section */
+
+.history-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
 
  .history {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 240px;
+    gap: 20px;
     width: 840px;
     margin: 0 auto;
  }
 
- .history text {
+ .history-text {
     width: 30%;
+    font-family: var(--text-font);
+    color: var(--accent2-color);
+    text-align: left;
 }
 
 .history img {
-    width: 300px;
+    width: 180px;
     height: auto;
     border-radius: 12px;
 }
 
-div {
-    margin: 16px 0;
+                                            /* Adventures section */
+
+.adventure {
+  width: 840px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  border-radius: 8px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery div {
+  width: 150px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+}
+
+.gallery p {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--accent2-color);
+}
+
+                                            /* Social media section */
+
+
+footer {
     position: relative;
 }
 
-section img {
-    width: 500px;
-    margin: 8px;
-    border-radius: 12px;
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .socialmedia a {
@@ -158,4 +246,9 @@ section img {
     width: 32px;
     height: 32px;
     margin: 0 8px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 0.9rem;
 }
