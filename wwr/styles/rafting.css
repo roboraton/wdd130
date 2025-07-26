@@ -66,8 +66,9 @@ header nav a {
     background-color: var(--accent1-color);
     border-radius: 5px;
     text-decoration: none;
-    color: var(--accent2-color);
+    color: white;
     font-weight: bold;
+    font-size: 1.6rem;
     display: inline-block;
     align-items: center;
 
@@ -214,8 +215,8 @@ body {
 
 .gallery figcaption {
   margin-top: 4px;
-  font-size: 0.85rem;
-  color: var(--accent2-color);
+  font-size: 1.2rem;
+  color: white;
 }
 
                                             /* Social media section */
