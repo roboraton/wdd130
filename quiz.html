@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+
+    <h1>Basic HTML and CSS Quiz</h1>
+
+    <form>
+        <fieldset>
+            <legend>Question 1</legend>
+            <label for="q1">What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1">
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2</legend>
+            <label for="q2">Explain the purpose of CSS in web development:</label>
+            <textarea id="q2" name="q2"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3</legend>
+            <label for="q3">Which tag is used to link a CSS file?</label>
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose one...</option>
+                <option value="link">link</option>
+                <option value="style">style</option>
+                <option value="script">script</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 4</legend>
+            <label for="q4">How many heading levels does HTML support?</label>
+            <input type="number" id="q4" name="q4" min="0" max="6">
+        </fieldset>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+
+</body>
+</html>
