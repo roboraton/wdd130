@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #33658A; /* Lapis Lazuli */
-    --accent1-color: #2DE1C2; /* Turquoise */
-    --secondary-color: #E4572E; /* Flame */
-    --accent2-color: #4F5D2F; /* Dark Moss Green */
+    --primary-color: #264653; /* Charcoal */
+    --secondary-color: #e9c46a; /* Safron */
+    --accent1-color: #2A9D8F; /* Persian green */
+    --accent2-color: #F4A261; /* Sandy brown */
     --heading-font: "Edu TAS Beginner", cursive; /* https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap */
     --heading-font-weight: 400 700;
     --text-font: "Oregano", cursive; /* https://fonts.googleapis.com/css2?family=Oregano&display=swap */
     --text-font-weight: 400;
 }
-/* https://coolors.co/33658a-e4572e-2de1c2-4f5d2f-050505 */
+/* https://coolors.co/264653-e9c46a-2a9d8f-f4a261 */
 
 *{
     margin: 0;
@@ -159,19 +159,28 @@ body {
 }
 
 
- .history {
+.history {
+    text-align: center;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     width: 840px;
     margin: 0 auto;
- }
+}
+
+.history-section h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
 
  .history-text {
     width: 30%;
     font-family: var(--text-font);
-    color: var(--accent2-color);
+    font-weight: 500;
+    font-size: larger;
+    color: var(--primary-color);
     text-align: left;
 }
 
@@ -219,7 +228,7 @@ body {
   color: white;
 }
 
-                                            /* Social media section */
+                                        /* Social media section */
 
 
 footer {
@@ -255,7 +264,81 @@ footer {
     font-size: 0.9rem;
 }
 
-                                                           /* Form section */
+                                                        /* Contact info & map */
+
+
+.contact-info {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 24px;
+    color: var(--accent2-color);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text p {
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.map {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map iframe {
+    margin-top: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+                                            /* Employees section */
+
+.employees {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employees figure {
+    width: 200px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.employees img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+}
+
+.employees figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+                                                /* Form section */
 
 .form {
     background-color: var(--accent1-color);
@@ -308,60 +391,9 @@ form button {
     font-weight: bold;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background-color: #c3421f;
-}
-
-                                                       /* Employees section */
-
-.employees {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.employees figure {
-    width: 200px;
-    text-align: center;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-.employees img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid var(--primary-color);
-}
-
-.employees figcaption {
-    margin-top: 8px;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-                                                     /* Contact info & map */
-
-
-.contact-info {
-    background-color: #f3f3f3;
-    border-radius: 8px;
-    padding: 24px;
-    color: var(--accent2-color);
-}
-
-.map iframe {
-    width: 100%;
-    max-width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 16px;
 }
