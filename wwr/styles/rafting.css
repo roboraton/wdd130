@@ -385,11 +385,22 @@ form textarea {
 form fieldset {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    padding: 12px 20px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #ffffffcc;
     color: var(--accent2-color);
 }
+
+form fieldset legend {
+    color: white;
+    padding-bottom: 3rem;
+    padding-left: -2.5;
+}
+
+form fieldset label {
+    font-size: 20px;
+}
+
 
 form button {
     background-color: var(--secondary-color);
@@ -404,4 +415,47 @@ form button {
 
 form button:hover {
     background-color: #c3421f;
+}
+
+                            /*Index page*/
+
+
+.hero-index img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+
+}
+
+.hero-index h1 {
+    position: relative;
+    color: white;
+    top: 50px;
+    left: 50px;
+    margin-top: -800px;
+    margin-left: 25%;
+    margin-bottom: 680px;
+    font-size: 2.5rem;
+    padding: 16px 24px;
+    z-index: 1;
+}
+
+.call-to-action p{
+    font-size: 24px;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+.about-grid img {
+    width: 100%;
+}
+
+.about-grid p {
+    font-size: 22px;
 }
