@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #264653; /* Charcoal */
-    --secondary-color: #e9c46a; /* Safron */
-    --accent1-color: #2A9D8F; /* Persian green */
-    --accent2-color: #F4A261; /* Sandy brown */
+    --primary-color: #004b3c; /* Brunswick green */
+    --secondary-color: #000000; /* Black */
+    --accent1-color: #333333; /* Jet */
+    --accent2-color: #EAEAEA; /* Platinum */
     --heading-font: "Edu TAS Beginner", cursive; /* https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap */
     --heading-font-weight: 400 700;
     --text-font: "Oregano", cursive; /* https://fonts.googleapis.com/css2?family=Oregano&display=swap */
     --text-font-weight: 400;
 }
-/* https://coolors.co/264653-e9c46a-2a9d8f-f4a261 */
+/* https://coolors.co/004b3c-000000-333333-eaeaea */
 
 *{
     margin: 0;
@@ -239,6 +239,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    color: var(--secondary-color);
 }
 
 .socialmedia{
@@ -262,6 +263,7 @@ footer {
 .contact {
     text-align: center;
     font-size: 0.9rem;
+    color: var(--secondary-color);
 }
 
                                                         /* Contact info & map */
@@ -458,4 +460,75 @@ form button:hover {
 
 .about-grid p {
     font-size: 22px;
+}
+
+                /*trips page*/
+
+.cta {
+  background-color: var(--accent1-color);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--accent2-color);
+}
+
+.cta p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta a {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease;
+  
+}
+
+
+.trip h3 {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+}
+
+.trip p {
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+}
+
+.trip {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.trip img {
+    width: 300px;
+}
+
+.trip-table {
+    display: table;
+    margin: auto;
+    text-align: center;
+    background-color: #004b3c;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid white;
+    padding: 10px 15px;
+    color: white;
 }
