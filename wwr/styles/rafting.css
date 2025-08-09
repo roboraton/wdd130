@@ -134,12 +134,19 @@ body {
     opacity: 0.8;
 }
 
+.hero h2 {
+    opacity: 1;
+    color: var(--accent2-color);
+    margin-right: 200px;
+}
+
 .hero article p {
     color: white;
     font-family: var(--text-font);
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: left;
+    margin-top: 40px;
 }
 
 .hero article img {
@@ -472,6 +479,13 @@ form button:hover {
     grid-template-columns: 1fr 1fr;
     gap: 20px
 }
+
+.about-grid h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
 
 .about-grid img {
     width: 100%;
