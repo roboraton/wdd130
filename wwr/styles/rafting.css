@@ -175,12 +175,12 @@ body {
     font-weight: bold;
 }
 
- .history-text {
+ .history-text p {
     width: 30%;
     font-family: var(--text-font);
     font-weight: 500;
-    font-size: larger;
-    color: var(--primary-color);
+    font-size: 16px;
+    color: var(--secondary-color);
     text-align: left;
 }
 
@@ -270,7 +270,7 @@ footer {
 
 
 .contact-info {
-    background-color: #f3f3f3;
+    background-color: var(--accent1-color);
     border-radius: 8px;
     padding: 24px;
     color: var(--accent2-color);
@@ -328,7 +328,7 @@ footer {
 .employees figure {
     width: 200px;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: var(--accent2-color);
     border-radius: 8px;
     padding: 10px;
 }
@@ -387,15 +387,18 @@ form textarea {
 form fieldset {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    background-color: #ffffffcc;
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    margin-bottom: 20px;
+    align-self: start;
+
 }
 
 form fieldset legend {
     color: white;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-left: -2.5;
 }
 
@@ -419,7 +422,7 @@ form button:hover {
     background-color: #c3421f;
 }
 
-                            /*Index page*/
+                                                             /*Index page*/
 
 
 .hero-index img {
@@ -436,14 +439,30 @@ form button:hover {
     top: 50px;
     left: 50px;
     margin-top: -800px;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-bottom: 680px;
-    font-size: 2.5rem;
+    font-size: 26px;
     padding: 16px 24px;
     z-index: 1;
 }
 
-.call-to-action p{
+.newsletter label {
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.newsletter button {
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.call-to-action p {
+    background-color: var(--primary-color);
+    font-size: 24px;
+    text-align: center;
+}
+
+.call-to-action a {
     font-size: 24px;
 }
 
@@ -460,9 +479,10 @@ form button:hover {
 
 .about-grid p {
     font-size: 22px;
+    background-color: var(--secondary-color);
 }
 
-                /*trips page*/
+                                                        /*trips page*/
 
 .cta {
   background-color: var(--accent1-color);
