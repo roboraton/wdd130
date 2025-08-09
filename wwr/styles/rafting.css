@@ -406,7 +406,6 @@ form fieldset {
 form fieldset legend {
     color: white;
     padding-bottom: 2rem;
-    padding-left: -2.5;
 }
 
 form fieldset label {
